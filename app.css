@@ -52,3 +52,43 @@
 .footer li {
   margin-bottom: 20px;
 }
+
+#item-description {
+  opacity: 0;
+  background-color: rgba(25, 25, 25, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-top: 7%; 
+  padding-left: 7%;       
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#block-image:hover #item-description {
+  display: block;
+  opacity: 1;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: white;
+  color: black;
+}

@@ -3,13 +3,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 1.3rem;
+}
 ::selection {
-  background: rgb(255, 106, 52); /* WebKit/Blink Browsers */
-  color: white;
+  background: yellow; /* WebKit/Blink Browsers */
+  color: black;
 }
 ::-moz-selection {
-  background: rgb(255, 106, 52); /* WebKit/Blink Browsers */
-  color: white;
+  background: yellow; /* WebKit/Blink Browsers */
+  color: black;
 }
 
 .logo {
@@ -197,6 +202,20 @@ body {
   border-color: orangered;
   text-decoration: none;
 }
+
+a:focus-visible {
+  background-color: yellow;
+  color: black;
+}
+
+a:focus {
+  outline: none;
+  background-color: yellow;
+  color: black; 
+}
+
+/* .navbar-list-item a:focus-visible {
+  outline: 3px solid blue; /* That'll show 'em */
 
 .navbar-list-item {
   border: none;
